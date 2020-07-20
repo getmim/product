@@ -69,7 +69,8 @@ return [
                     'type' => 'std-cover'
                 ],
                 'gallery' => [
-                    'type' => 'json'
+                    'type' => 'media-list',
+                    'separator' => 'json'
                 ],
                 'price' => [
                     'type' => 'json'
