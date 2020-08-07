@@ -53,10 +53,28 @@ return [
                 'attrs' => [],
                 'index' => 7000
             ],
+            'price_min' => [
+                'type' => 'DOUBLE',
+                'length' => '13,2',
+                'attrs' => [
+                    'unsigned' => TRUE,
+                    'null' => FALSE
+                ],
+                'index' => 8000
+            ],
+            'price_max' => [
+                'type' => 'DOUBLE',
+                'length' => '13,2',
+                'attrs' => [
+                    'unsigned' => TRUE,
+                    'null' => FALSE
+                ],
+                'index' => 9000
+            ],
             'content' => [
                 'type' => 'TEXT',
                 'attrs' => [],
-                'index' => 8000
+                'index' => 10000
             ],
             'status' => [
                 'comment' => '0 Deleted, 1 Draft, 2 Published',
@@ -66,12 +84,12 @@ return [
                     'null' => false,
                     'default' => 1
                 ],
-                'index' => 9000
+                'index' => 11000
             ],
             'meta' => [
                 'type' => 'TEXT',
                 'attrs' => [],
-                'index' => 10000
+                'index' => 12000
             ],
             'updated' => [
                 'type' => 'TIMESTAMP',
@@ -79,14 +97,14 @@ return [
                     'default' => 'CURRENT_TIMESTAMP',
                     'update' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 11000
+                'index' => 13000
             ],
             'created' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 12000
+                'index' => 14000
             ]
         ]
     ]

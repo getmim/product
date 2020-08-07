@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'product',
-    '__version' => '0.0.1',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/product.git',
     '__license' => 'MIT',
     '__author' => [
@@ -74,6 +74,14 @@ return [
                 ],
                 'price' => [
                     'type' => 'json'
+                ],
+                'price_min' => [
+                    'type' => 'number',
+                    'decimal' => 2
+                ],
+                'price_max' => [
+                    'type' => 'number',
+                    'decimal' => 2
                 ],
                 'content' => [
                     'type' => 'text'
